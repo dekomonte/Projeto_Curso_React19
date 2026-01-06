@@ -5,19 +5,21 @@
 
 import './styles/theme.css';
 import './styles/global.css';
+import { Container } from './components/Container';
 import { Heading } from './components/Heading';
-import { TimerIcon } from 'lucide-react';
 
 export function App() {
-
   return (
     <>
-      <Heading>Olá Mundo!
-        <button>
-          <TimerIcon />
-        </button>
-      </Heading>
-      <Heading>Teste</Heading>
+      <Container>
+        <Heading>Logo</Heading>
+      </Container>
+      <Container>
+        <section>Menu</section>
+      </Container>
+      <Container>
+        <section>Teste</section>
+      </Container>
     </>
   );
 }
